@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación - Evan Andrés</title>
+
+<style>
+
+body{
+font-family:'Roboto', sans-serif;
+background:linear-gradient(180deg, #ffffff, #add8e6);
+text-align:center;
+overflow-x:hidden;
+padding:20px;
+}
+
+/* TARJETA */
+
+.card{
+background:transparet;
+max-width:440px;
+margin:auto;
+border-radius:25px;
+padding:28px;
+box-shadow:0 12px 30px rgba(0,0,0,0.3);
+border:6px solid #4285F4;
+position:relative;
+z-index:2;
+}
+
+.title{
+font-size:26px;
+font-weight:bold;
+color:#2e7d32;
+}
+
+.name{
+font-size:42px;
+font-weight:bold;
+color:#1b5e20;
+}
+
+.subtitle{
+font-size:22px;
+color:#4285F4;
+}
+
+.section{
+margin-top:18px;
+}
+
+button{
+padding:14px 20px;
+margin:8px;
+border:none;
+border-radius:14px;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.map{
+background:#4285F4;
+color:white;
+}
+
+/* GLOBOS */
+
+.balloon{
+position:fixed;
+bottom:-100px;
+font-size:40px;
+animation:flotar 10s linear infinite;
+}
+
+@keyframes flotar{
+0%{transform:translateY(0)}
+100%{transform:translateY(-120vh)}
+}
+
+/* DINOSAURIO CAMINANDO */
+
+.dino{
+position:fixed;
+bottom:30px;
+font-size:100px;
+animation:caminar 18s linear infinite;
+}
+
+@keyframes caminar{
+0%{right:-100px}
+100%{right:110%}
+}
+
+/* VOLCAN */
+
+.volcano{
+position:fixed;
+bottom:0;
+right:10px;
+font-size:200px;
+animation:volcan 2s infinite;
+}
+
+@keyframes volcan{
+0%{transform:translateY(0)}
+50%{transform:translateY(-40px)}
+100%{transform:translateY(0)}
+}
+
+.lava{
+position:fixed;
+bottom:140px;
+right:20px;
+font-size:140px;
+animation:lava 2s infinite;
+}
+
+@keyframes lava{
+0%{opacity:1; transform:translateY(20)}
+100%{opacity:0; transform:translateY(-8px)}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SONIDOS -->
+
+<audio autoplay>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_5a9f63f636.mp3">
+</audio>
+
+
+<!-- GLOBOS -->
+
+<div class="balloon" style="left:10%">🎈🎈</div>
+<div class="balloon" style="left:30%;animation-delay:3s">🎈</div>
+<div class="balloon" style="left:50%;animation-delay:6s">🎈🎈</div>
+<div class="balloon" style="left:70%;animation-delay:1s">🎈</div>
+<div class="balloon" style="left:85%;animation-delay:4s">🎈🎈</div>
+
+
+
+<!-- VOLCAN -->
+
+<div class="volcano">🌋</div>
+<div class="lava"></div>
+
+<!-- DINOSAURIO -->
+
+<div class="dino">🦖</div>
+
+<!-- TARJETA -->
+
+<div class="card">
+
+<div style="font-size:40px">🦖🦕🦖🦕</div>
+
+<div class="title">¡Estás invitado a la presentación de</div>
+
+<div class="name">Evan Andrés!</div>
+<div class="section">
+<div class="subtitle">Celebra conmigo <b>mis 3 años</b> 🎉</div>
+</div>
+<div class="section">
+📅 16 de mayo<br>
+</div>
+<div class="section">
+⏰ 2:00 PM Misa en Nuestra Señora de Guadalupe<br>
+</div>
+
+<div class="section">
+📍 Recepción 3:00 PM<br>
+Jardín Aitana
+</div>
+
+
+
+<div class="section">
+<b>Mis padrinos</b><br>
+Daniel Benito Mendoza Arcia<br>
+Laura Jimena Chávez Meza<br>
+</div>
+
+<div class="section">
+<div class="subtitle">Por favor confirma tu asistencia<br></div>
+</div>
+<div class="section">
+
+<a href="https://wa.me/5215546678041?text=Confirmo%20mi%20asistencia%20a%20la%20fiesta%20de%20Evan%20Andrés">
+<button class="whatsapp">Confirmar a Yamilet</button>
+</a>
+
+<a href="https://wa.me/5215539847630?text=Confirmo%20mi%20asistencia%20a%20la%20fiesta%20de%20Evan%20Andrés">
+<button class="whatsapp">Confirmar a Andrés</button>
+</a>
+
+</div>
+
+<div class="section">
+
+<a href="https://www.google.com/maps/search/?api=1&query=Jardín+Aitana+Calle+Benjamín+Hill+Guadalupe+Victoria+Ecatepec">
+<button class="map">Ver ubicación del Jardín</button>
+</a>
+
+<a href="https://maps.app.goo.gl/gGDQy5ehCNnePASm8">
+<button class="map">Ver ubicación de Iglesia</button>
+</a>
+
+</div>
+
+<div style="font-size:40px"></div></div>
+
+</div>
+
+</body>
+</html>
